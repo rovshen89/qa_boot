@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="bundle-jars">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Resources/selenium_jars/libs/bundle-jars.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/selenium_jars/libs/byte-buddy-1.8.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/selenium_jars/libs/commons-exec-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/selenium_jars/libs/guava-25.0-jre.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/selenium_jars/libs/javax.servlet-api-3.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/selenium_jars/libs/jcip-annotations-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/selenium_jars/libs/jcommander-1.72.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/selenium_jars/libs/okhttp-3.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/selenium_jars/libs/okio-1.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/selenium_jars/libs/snakeyaml-1.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/selenium_jars/selenium-3.141.59-nodeps.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../Resources/selenium_jars/selenium-3.141.59-nodeps-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
