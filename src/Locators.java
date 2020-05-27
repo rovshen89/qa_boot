@@ -15,13 +15,15 @@ public class Locators {
         Thread.sleep(2000);
         driver.findElement(By.name("query")).sendKeys("test message"); //find element by name attribute
         Thread.sleep(2000);
-        driver.findElement(By.className("search-query")).clear();
+        driver.findElement(By.className("search-query")).clear(); //find element by class name tag
         Thread.sleep(2000);
         driver.findElement(By.className("search-query")).sendKeys("a new test message");
         Thread.sleep(2000);
-        driver.findElement(By.linkText("Wealth Management")).click();
+        driver.findElement(By.linkText("Wealth Management")).click(); //find element by link text <href=link>Link Text</>
         Thread.sleep(2000);
         //driver.findElement(By.partialLinkText("Management")).click(); //we can use partial link text also
+        driver.findElement(By.cssSelector("a[aria-label='Learn more']")).click();
+        Thread.sleep(2000);
         driver.quit();
 
     }
