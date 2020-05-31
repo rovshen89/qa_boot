@@ -17,7 +17,7 @@ public class Xpath {
         driver.findElement(By.xpath("//tag[contains(text(), 'partial text value')]")).click(); //xpath using contains and text() keyword
         driver.findElement(By.xpath("//tag[contains(text(), 'partial text value') and @attribute = 'value']")).click(); //xpath using contains and 'and'() keyword
         driver.findElement(By.xpath("//tag[starts-with(@attribute, 'starting char set of value')")).click(); //xpath using starts-with keyword
-
+        
     }
 
 }
