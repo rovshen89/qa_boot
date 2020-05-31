@@ -16,7 +16,7 @@ import static junitClass.JunitSelenium.baseUrl;
 
 
 @TestMethodOrder(MethodOrderer.Alphanumeric.class)
-public class JunitSE {
+public class JunitJSE {
     static WebDriver driver;
     static String baseURL;
     static JavascriptExecutor jse;
