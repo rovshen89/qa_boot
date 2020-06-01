@@ -1,11 +1,15 @@
 package junitClass;
 
 import org.junit.jupiter.api.*;
+import org.openqa.selenium.WebDriver;
 
 public class JunitClass {
+    static WebDriver driver;
+    static String baseURL;
 
     @BeforeAll
     public static void setUp(){
+
         System.out.println("@BeforeAll - executed once before ALL test methods in this class");
     }
 
