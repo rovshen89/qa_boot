@@ -1,10 +1,12 @@
 package junitClass;
 
 import org.junit.jupiter.api.*;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class JunitClass {
+public class JunitiFrame {
     static WebDriver driver;
     static String baseURL;
 
@@ -20,32 +22,24 @@ public class JunitClass {
 
     @AfterAll
     public static void tearDown() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         driver.quit();
         System.out.println("@AfterAll - executed once before ALL test methods in this class");
     }
 
-    @BeforeEach
-    public void init(){
-        System.out.println("@BeforeEach - executed once before EVERY test methods in this class");
-    }
 
-    @AfterEach
-    public void done(){
-        System.out.println("@AfterEach - executed once after EVERY test methods in this class");
-    }
 
     @Test
-    public void test1(){
+    public void test1() throws InterruptedException {
+        Thread.sleep(2000);
+        driver.switchTo().frame("courses-iframe");
+
+        WebElement findCourse = driver.findElement(By.xpath("//input[@placeholder = 'Find a course']"));
+        WebElement submitBtn = driver.findElement(By.id("search-course-button"));
+        findCourse.sendKeys("Selenium");
+        submitBtn.click();
+
         System.out.println("@Test1 - executed test");
     }
-    @Test
-    public void test2(){
-        System.out.println("@Test2 - executed test");
-    }
 
-    @Test
-    public void test3(){
-        System.out.println("@Test3 - executed test");
-    }
 }
