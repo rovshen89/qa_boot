@@ -32,7 +32,9 @@ public class JunitiFrame {
     @Test
     public void test1() throws InterruptedException {
         Thread.sleep(2000);
-        driver.switchTo().frame("courses-iframe");
+        WebElement iframeEle = driver.findElement(By.xpath("//*[contains(@src, 'courses')]"));
+//        driver.switchTo().frame("courses-iframe"); //by iframe ID or name
+        driver.switchTo().frame(iframeEle); //by xpath
 
         WebElement findCourse = driver.findElement(By.xpath("//input[@placeholder = 'Find a course']"));
         WebElement submitBtn = driver.findElement(By.id("search-course-button"));
