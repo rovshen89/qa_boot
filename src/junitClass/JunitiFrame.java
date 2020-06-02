@@ -34,12 +34,17 @@ public class JunitiFrame {
         Thread.sleep(2000);
         WebElement iframeEle = driver.findElement(By.xpath("//*[contains(@src, 'courses')]"));
 //        driver.switchTo().frame("courses-iframe"); //by iframe ID or name
-        driver.switchTo().frame(iframeEle); //by xpath
+        driver.switchTo().frame(iframeEle); //by Webelement reference
 
         WebElement findCourse = driver.findElement(By.xpath("//input[@placeholder = 'Find a course']"));
         WebElement submitBtn = driver.findElement(By.id("search-course-button"));
         findCourse.sendKeys("Selenium");
         submitBtn.click();
+
+        driver.switchTo().defaultContent(); // switch back to main page
+        driver.findElement(By.id("alertbtn")).click();
+        Thread.sleep(2000);
+        driver.switchTo().alert().accept();
 
         System.out.println("@Test1 - executed test");
     }
