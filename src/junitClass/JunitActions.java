@@ -2,6 +2,7 @@ package junitClass;
 
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -61,12 +62,38 @@ public class JunitActions {
         driver.switchTo().frame(frame);
 
         WebElement anchor = driver.findElement(By.xpath("//div[@class = 'widget']//a[text() = 'An anchor']"));
-        action.doubleClick(anchor).perform();
+        action.doubleClick(anchor).perform(); //double click
         Thread.sleep(3000);
-        action.contextClick(anchor).perform();
+        action.contextClick(anchor).perform(); //right click
+        Thread.sleep(3000);
 
-        System.out.println("Double click and Right click successfull");
+        action.sendKeys(Keys.ESCAPE).perform(); //need to revise???
 
+        Thread.sleep(5000);
+
+        System.out.println("Double click and Right click successful");
+        driver.switchTo().defaultContent(); //do not forget to switch back to main frame
+    }
+
+    @Test
+    public void DragAndDrop() throws InterruptedException {
+        driver.navigate().to("https://jqueryui.com/droppable/");
+        Thread.sleep(3000);
+        WebElement frame = driver.findElement(By.cssSelector(".demo-frame"));
+        driver.switchTo().frame(frame);
+
+        WebElement draggable = driver.findElement(By.id("draggable"));
+        WebElement droppable = driver.findElement(By.id("droppable"));
+
+        action.dragAndDrop(draggable, droppable).build().perform();
+        Thread.sleep(3000);
+
+        String actualTxt = droppable.findElement(By.tagName("p")).getText();
+
+        Assertions.assertEquals("Dropped!", actualTxt, "Element not found!");
+
+        System.out.println("Dragged and dropped");
+        driver.switchTo().defaultContent();
 
     }
 
