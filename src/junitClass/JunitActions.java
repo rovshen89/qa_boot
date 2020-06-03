@@ -97,4 +97,26 @@ public class JunitActions {
 
     }
 
+    @Test
+    public void ClickAndRelease() throws InterruptedException {
+        driver.navigate().to("https://jqueryui.com/droppable/");
+        Thread.sleep(3000);
+        WebElement frame = driver.findElement(By.cssSelector(".demo-frame"));
+        driver.switchTo().frame(frame);
+
+        WebElement draggable = driver.findElement(By.id("draggable"));
+        WebElement droppable = driver.findElement(By.id("droppable"));
+
+        //click and hold method
+        action.clickAndHold(draggable).moveToElement(droppable).release().build().perform();
+        Thread.sleep(3000);
+
+        String actualTxt = droppable.findElement(By.tagName("p")).getText();
+
+        Assertions.assertEquals("Dropped!", actualTxt, "Element not found!");
+
+        System.out.println("Dragged and dropped");
+        driver.switchTo().defaultContent();
+
+    }
 }
