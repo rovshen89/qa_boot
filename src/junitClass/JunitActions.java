@@ -41,7 +41,11 @@ public class JunitActions {
         action.moveToElement(hovSupport).perform(); //to hover on a given Web element
         Thread.sleep(3000);
         action.moveToElement(forumClick).click().perform(); //to click on a given Web element
+        Thread.sleep(3000);
 
+        String currURL = driver.getCurrentUrl();
+        Assertions.assertEquals("https://forum.jquery.com/", currURL, "URL mismatch. Current URL is: " + currURL);
+        System.out.println("Current URL is: " + currURL);
         System.out.println("@Test1 - executed test");
     }
 
