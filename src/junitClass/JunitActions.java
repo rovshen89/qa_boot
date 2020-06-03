@@ -1,10 +1,7 @@
 package junitClass;
 
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -117,6 +114,50 @@ public class JunitActions {
 
         System.out.println("Dragged and dropped");
         driver.switchTo().defaultContent();
+    }
+
+    @Test
+    public void Slider() throws InterruptedException {
+        driver.navigate().to("https://www.kayak.com/cars/PHL-a1458/2020-06-27/2020-07-22?sort=rank_a");
+        Thread.sleep(5000);
+
+        WebElement totPrice = driver.findElement(By.xpath("//div[text() = 'Total price']"));
+//        action.moveToElement(totPrice).perform();
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("arguments[0].scrollIntoView(true)", totPrice);
+
+        Thread.sleep(2000);
+        totPrice.click();
+
+        WebElement minPrice = driver.findElement(By.className("cars-results-filters-PriceFilterSection__Header__Min"));
+        WebElement maxPrice = driver.findElement(By.className("cars-results-filters-PriceFilterSection__Header__Max"));
+
+        System.out.println("Min price before slide:"+minPrice.getText());
+        System.out.println("Max price before slide:"+maxPrice.getText());
+
+        WebElement startingSlider = driver.findElement(By.xpath("//div[@aria-label='Minimum price' and @role='slider']"));
+        WebElement endSlider = driver.findElement(By.xpath("//div[@aria-label='Maximum price' and @role='slider']"));
+
+        action.dragAndDropBy(startingSlider, 55, 0).perform(); // drags and drops a slider element by offset given
+        Thread.sleep(5000);
+        action.dragAndDropBy(endSlider, -50, 0).perform(); // drags and drops a slider element by offset given
+
+        System.out.println("Min price after slide:"+minPrice.getText());
+        System.out.println("Max price after slide:"+maxPrice.getText());
+
+        // Note to student - Add Assertions.assertNotEquals as an exercise for the test case assertions part!
 
     }
+
+    @Test
+    public void KeysPress() throws InterruptedException {
+        driver.navigate().to("https://www.kayak.com/cars/PHL-a1458/2020-06-27/2020-07-22?sort=rank_a");
+        Thread.sleep(5000);
+
+        Thread.sleep(5000);
+        action.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).perform();
+        Thread.sleep(5000);
+
+    }
+
 }

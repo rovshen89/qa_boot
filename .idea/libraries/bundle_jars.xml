@@ -16,6 +16,7 @@
       <root url="jar://$PROJECT_DIR$/../Resources/Junit/junit-jupiter-api-5.6.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/../Resources/Junit/junit-platform-commons-1.6.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/../Resources/Junit/opentest4j-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/commons-io-2.6.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
