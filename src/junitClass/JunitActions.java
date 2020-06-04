@@ -1,10 +1,14 @@
 package junitClass;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import utils.RandomString;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /*
@@ -26,7 +30,11 @@ public class JunitActions {
     }
 
     @AfterAll
-    public static void tearDown() throws InterruptedException {
+    public static void tearDown() throws InterruptedException, IOException {
+        RandomString rString = new RandomString();
+
+        File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(srcFile, new File("D:\\QA_Testing\\Screenshots\\" +rString.genRandom(5)+".png"));
         Thread.sleep(4000);
         driver.quit();
         System.out.println("@AfterAll - executed once before ALL test methods in this class");
