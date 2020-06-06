@@ -6,9 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
-public class TestNG_Dependency extends TestNG_Suite {
+public class TestNG_Parameters extends TestNG_Suite {
     static WebDriver driver;
     static String baseURL;
     static Actions action;
