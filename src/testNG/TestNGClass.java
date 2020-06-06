@@ -3,7 +3,7 @@ package testNG;
 import com.sun.security.jgss.GSSUtil;
 import org.testng.annotations.*;
 
-public class TestNGClass {
+public class TestNGClass extends TestNG_Suite {
     @BeforeClass
     public void setUp(){
         System.out.println("@BeforeClass method");

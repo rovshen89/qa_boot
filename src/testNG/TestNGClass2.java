@@ -2,7 +2,7 @@ package testNG;
 
 import org.testng.annotations.*;
 
-public class TestNGClass2 {
+public class TestNGClass2 extends TestNG_Suite {
     @BeforeClass
     public void setUp(){
         System.out.println("Class2 - @BeforeClass method");
