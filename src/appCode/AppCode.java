@@ -11,7 +11,7 @@ public class AppCode {
     }
 
     public int[] getArray(){
-        int[] arr = {1,2,3};
+        int[] arr = {1,2,3,6};
         return arr;
     }
 }
