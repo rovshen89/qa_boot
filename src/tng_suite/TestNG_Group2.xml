@@ -9,8 +9,12 @@
             <define name="Face IDs">
                 <include name="FaceID"></include>
             </define>
+            <define name="All androids">
+                <include name="android"></include>
+            </define>
             <run>
                 <include name="All iphone"></include>
+                <exclude name="All androids"></exclude>
             </run>
         </groups>
         <classes>
