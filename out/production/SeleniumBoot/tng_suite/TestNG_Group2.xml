@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name= "Regression Suite" >
+    <test name="iPhone group testing" >
+        <groups>
+            <define name="All iphone">
+                <include name="iphone"></include>
+            </define>
+            <define name="Face IDs">
+                <include name="FaceID"></include>
+            </define>
+            <define name="All androids">
+                <include name="android"></include>
+            </define>
+            <run>
+                <include name="All iphone"></include>
+                <exclude name="All androids"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="testNG.TestNG_Group"></class>
+        </classes>
+    </test>
+    <test name="Android group testing" >
+        <groups>
+            <run>
+                <include name="android"></include>
+            </run>[
+        </groups>
+        <classes>
+            <class name="testNG.TestNG_Group"></class>
+        </classes>
+    </test>
+</suite>

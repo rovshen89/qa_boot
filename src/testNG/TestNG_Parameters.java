@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class TestNG_Parameters extends TestNG_Suite {
@@ -15,8 +16,9 @@ public class TestNG_Parameters extends TestNG_Suite {
     static String baseURL;
     static Actions action;
 
+    @Parameters({"browser", "platform"})
     @BeforeClass
-    public void setUp(){
+    public void setUp(String browser, String platform){
         baseURL = "https://jqueryui.com/";
         System.setProperty("webdriver.gecko.driver", "D:\\QA_Testing\\Resources\\geckodriver\\geckodriver.exe");
         driver = new FirefoxDriver();
