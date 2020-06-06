@@ -17,6 +17,10 @@
       <root url="jar://$PROJECT_DIR$/../Resources/Junit/junit-platform-commons-1.6.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/../Resources/Junit/opentest4j-1.2.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/../Resources/commons-io-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/TestNG/guice-4.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/TestNG/jcommander-1.72.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/TestNG/snakeyaml-1.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Resources/TestNG/testng-7.1.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
