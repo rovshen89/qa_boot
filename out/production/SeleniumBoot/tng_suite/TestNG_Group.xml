@@ -4,13 +4,22 @@
     <test name="iPhone group testing" >
         <groups>
             <run>
+                <include name="iphone"></include>
                 <include name="FaceID"></include>
-         
             </run>
         </groups>
         <classes>
             <class name="testNG.TestNG_Group"></class>
         </classes>
     </test>
-
+    <test name="Android group testing" >
+        <groups>
+            <run>
+                <include name="android"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="testNG.TestNG_Group"></class>
+        </classes>
+    </test>
 </suite>
