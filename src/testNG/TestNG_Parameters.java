@@ -3,6 +3,8 @@ package testNG;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -19,14 +21,32 @@ public class TestNG_Parameters extends TestNG_Suite {
     @Parameters({"browser", "platform"})
     @BeforeClass
     public void setUp(String browser, String platform){
+        System.out.println("Browser name: " + browser);
+        System.out.println("Platform name: " + platform);
+        setBrowser(browser);
         baseURL = "https://jqueryui.com/";
-        System.setProperty("webdriver.gecko.driver", "D:\\QA_Testing\\Resources\\geckodriver\\geckodriver.exe");
-        driver = new FirefoxDriver();
+//        System.setProperty("webdriver.gecko.driver", "D:\\QA_Testing\\Resources\\geckodriver\\geckodriver.exe");
+//        driver = new FirefoxDriver();
         action = new Actions(driver);
         driver.manage().window().maximize();
         driver.get(baseURL);
-        System.out.println("@BeforeAll - executed once before ALL test methods in this class");
         System.out.println("@BeforeClass method");
+    }
+
+    private void setBrowser(String browser){
+        switch (browser.toLowerCase()){
+            case "firefox":
+                System.setProperty("webdriver.gecko.driver", "D:\\QA_Testing\\Resources\\geckodriver\\geckodriver.exe");
+                driver = new FirefoxDriver();
+                break;
+            case "chrome":
+                System.setProperty("webdriver.chrome.driver", "D:\\QA_Testing\\Resources\\chromedriver\\chromedriver.exe");
+                driver = new ChromeDriver();
+                break;
+            case "edge":
+                driver = new EdgeDriver();
+                break;
+        }
     }
 
     @AfterClass
@@ -40,6 +60,7 @@ public class TestNG_Parameters extends TestNG_Suite {
 
     @Test
     public void baseNG() throws InterruptedException {
+        Thread.sleep(3000);
         WebElement hovSupport = driver.findElement(By.xpath("//section//a[text()='Support']"));
         WebElement forumClick = driver.findElement(By.xpath("//a[text()='Forums']"));
 
@@ -56,8 +77,9 @@ public class TestNG_Parameters extends TestNG_Suite {
     }
 
     @Test(dependsOnMethods = {"baseNG"})
-    public void test1(){
-        WebElement getStarted = driver.findElement(By.xpath("//a[text() = 'Gettin Started']"));
+    public void test1() throws InterruptedException {
+        Thread.sleep(3000);
+        WebElement getStarted = driver.findElement(By.xpath("//a[text() = 'Getting Started']"));
         getStarted.click();
         System.out.println("Test1 method");
         Assert.assertTrue(driver.getCurrentUrl().contains("getting-started"));

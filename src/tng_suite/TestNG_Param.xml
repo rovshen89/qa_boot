@@ -2,13 +2,26 @@
 
 <suite name= "Regression Suite" >
     <test name="App testing FireFox" >
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="platform" value="windows"></parameter>
         <classes>
-            <class name="testNG.TestNGClass"></class>
+            <class name="testNG.TestNG_Parameters"></class>
         </classes>
     </test>
-    <test name="App testing test2" >
+    <test name="App testing Chrome" >
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="platform" value="windows"></parameter>
         <classes>
-            <class name="testNG.TestNGClass2"></class>
+            <class name="testNG.TestNG_Parameters"></class>
         </classes>
     </test>
+    <test name="App testing Edge" >
+        <parameter name="browser" value="edge"></parameter>
+        <parameter name="platform" value="windows"></parameter>
+        <classes>
+            <class name="testNG.TestNG_Parameters"></class>
+        </classes>
+    </test>
+
+
 </suite>
