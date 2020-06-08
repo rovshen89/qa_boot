@@ -2,6 +2,48 @@
 
 <suite name= "JQuery Tests" parallel="tests">
     <test name="CLA test">
+        <parameter name="linknNM" value="CLA"></parameter>
+        <parameter name="header" value="OpenJS Foundation"></parameter>
+        <classes>
+            <class name="testNG.TestNG_Parallel2"></class>
+        </classes>
+    </test>
+    <test name="Documentation Test">
+        <parameter name="linknNM" value="Documentation"></parameter>
+        <parameter name="header" value="Contributing to jQuery Foundation Documentation"></parameter>
+
+        <classes>
+            <class name="testNG.TestNG_Parallel2"></class>
+        </classes>
+    </test>
+    <test name="Bug Triage Test">
+        <parameter name="linknNM" value="Bug Triage"></parameter>
+        <parameter name="header" value="Bug Triage"></parameter>
+
+        <classes>
+            <class name="testNG.TestNG_Parallel2"></class>
+        </classes>
+    </test>
+    <test name="Style Guides Test">
+        <parameter name="linknNM" value="Style Guides"></parameter>
+        <parameter name="header" value="jQuery's Style Guides"></parameter>
+
+        <classes>
+            <class name="testNG.TestNG_Parallel2"></class>
+        </classes>
+    </test>
+    <test name="Web Sites Test">
+        <parameter name="linknNM" value="Web Sites"></parameter>
+        <parameter name="header" value="Contributing to jQuery Foundation Web Sites"></parameter>
+
+        <classes>
+            <class name="testNG.TestNG_Parallel2"></class>
+        </classes>
+    </test>
+    <test name="Code Test">
+        <parameter name="linknNM" value="Code"></parameter>
+        <parameter name="header" value="Writing Code for jQuery Foundation Projects"></parameter>
+
         <classes>
             <class name="testNG.TestNG_Parallel2"></class>
         </classes>

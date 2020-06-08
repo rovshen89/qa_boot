@@ -35,12 +35,13 @@ public class TestNG_Parallel2 {
         System.out.println("Quit all open browsers");
     }
 
+    @Parameters({"linkNm"})
     @Test
-    public void test1(){
+    public void test1(String linkNm){
         WebDriverWait wait = new WebDriverWait(driver, 5);
 
         //Hower to defined element
-        WebElement hovContrib = driver.findElement(By.xpath("//a[text() = 'Contribute']"));
+        WebElement hovContrib = driver.findElement(By.xpath("//a[text() = '"+linkNm+"']"));
         wait.until(ExpectedConditions.visibilityOf(hovContrib));
         action.moveToElement(hovContrib).perform();
 

@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name= "JQuery Tests" parallel="tests">
+    <test name="CLA test">
+        <classes>
+            <class name="testNG.TestNG_Parallel2"></class>
+        </classes>
+    </test>
+
+
+</suite>
