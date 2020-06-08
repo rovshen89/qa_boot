@@ -11,53 +11,56 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class TestNG_Parallel2 {
+
     WebDriver driver;
-    String baseURL;
     Actions action;
+    String baseUrl;
 
-
-    @BeforeClass
-    public void setUp(){
-        baseURL = "https://jqueryui.com";
-        System.setProperty("webdriver.chrome.driver",
-                "D:\\QA_Testing\\Resources\\chromedriver\\chromedriver.exe");
+    @BeforeTest
+    public void setUp() {
+        baseUrl = "https://jqueryui.com/";
+        //create browser driver instance.
+        System.setProperty("webdriver.chrome.driver","D:\\QA_Testing\\Resources\\chromedriver\\chromedriver.exe");
         driver = new ChromeDriver();
         action = new Actions(driver);
+        driver.get(baseUrl);
         driver.manage().window().maximize();
-        driver.get(baseURL);
-        System.out.println("Navigated to specified URL");
     }
 
-    @AfterClass
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(3000);
+    @AfterTest
+    public void tearDown() {
         driver.quit();
-        System.out.println("Quit all open browsers");
     }
 
     @Parameters({"linkNm"})
-    @Test
-    public void test1(String linkNm){
+    @Test //Hover on Contribute button and click on each of the menu items
+    public void test1(String linkNm) {
         WebDriverWait wait = new WebDriverWait(driver, 5);
 
-        //Hower to defined element
-        WebElement hovContrib = driver.findElement(By.xpath("//a[text() = '"+linkNm+"']"));
-        wait.until(ExpectedConditions.visibilityOf(hovContrib));
-        action.moveToElement(hovContrib).perform();
+        //hover on a given element Contribute
+        WebElement hovContri = driver.findElement(By.xpath("//a[text()='Contribute']"));
+        wait.until(ExpectedConditions.visibilityOf(hovContri));
+        action.moveToElement(hovContri).perform();
 
-        //click defined element
-        WebElement eachEle = driver.findElement(By.xpath("//a[text() = 'CLA']"));
-        wait.until(ExpectedConditions.visibilityOf(eachEle)).click();
+        //click on the given element
+        WebElement eachEle = driver.findElement(By.xpath("//a[text()='"+linkNm+"']"));
+        wait.until(ExpectedConditions.elementToBeClickable(eachEle)).click();
     }
 
-    @Test
-    public void test2(){
-        String currURL = driver.getCurrentUrl();
-        Assert.assertTrue(currURL.contains("openjsf"));
+    @Parameters({"header", "urlLink", "linkNm"})
+    @Test //validate landing url and page element
+    public void test2(String header, String urlLink, String linkNm) {
+        String currUrl = driver.getCurrentUrl();
+        String actualHead;
 
-        String openJSalt = driver.findElement(By.xpath("//img[@class = 'stnd ']")).getAttribute("alt");
-        Assert.assertEquals(openJSalt, "OpenJS Foundation");
+        if(linkNm.contains("CLA")) {
+            actualHead = driver.findElement(By.xpath("//img[@class='stnd ']")).getAttribute("alt");
+        } else {
+            actualHead = driver.findElement(By.xpath("//*[@id='content']/h1")).getText();
+        }
 
+        Assert.assertTrue(currUrl.contains(urlLink));
+        Assert.assertEquals(actualHead, header);
     }
 
 }
