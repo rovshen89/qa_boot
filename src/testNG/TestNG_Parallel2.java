@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class TestNG_Parallel2 {
@@ -46,7 +47,15 @@ public class TestNG_Parallel2 {
         //click defined element
         WebElement eachEle = driver.findElement(By.xpath("//a[text() = 'CLA']"));
         wait.until(ExpectedConditions.visibilityOf(eachEle)).click();
+    }
 
+    @Test
+    public void test2(){
+        String currURL = driver.getCurrentUrl();
+        Assert.assertTrue(currURL.contains("openjsf"));
+
+        String openJSalt = driver.findElement(By.xpath("//img[@class = 'stnd ']")).getAttribute("alt");
+        Assert.assertEquals(openJSalt, "OpenJS Foundation");
 
     }
 
