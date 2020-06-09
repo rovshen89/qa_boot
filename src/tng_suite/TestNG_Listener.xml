@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name= "jQuery Test">
+    <test name="App testing FireFox" >
+        <classes>
+            <class name="testNG.TestNG_Listener"></class>
+        </classes>
+    </test>
+
+
+</suite>
