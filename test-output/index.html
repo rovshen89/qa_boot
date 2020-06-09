@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-jQuery_Test" class="navigator-link">
+              <span class="suite-name border-passed">jQuery Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-jQuery_Test" class="navigator-link ">
+                    <span>D:\QA_Testing\SeleniumBoot\src\tng_suite\TestNG_Listener.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-jQuery_Test" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-jQuery_Test" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-jQuery_Test" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-jQuery_Test" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-jQuery_Test" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-jQuery_Test" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-jQuery_Test" class="hide-methods passed suite-jQuery_Test"> (hide)</a> <!-- hide-methods passed suite-jQuery_Test -->
+                      <a href="#" panel-name="suite-jQuery_Test" class="show-methods passed suite-jQuery_Test"> (show)</a> <!-- show-methods passed suite-jQuery_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-jQuery_Test">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-jQuery_Test" title="testNG.TestNG_Listener" class="method navigator-link" hash-for-method="test1(Documentation, Contributing to jQuery Foundation Documentation, documentation)">test1(Documentation, Contributing to jQuery Foundation Documentation, documentation)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-jQuery_Test" title="testNG.TestNG_Listener" class="method navigator-link" hash-for-method="test1(Bug Triage, Bug Triage, triage)">test1(Bug Triage, Bug Triage, triage)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-jQuery_Test" title="testNG.TestNG_Listener" class="method navigator-link" hash-for-method="test1(Code, Writing Code for jQuery Foundation Projects, code)">test1(Code, Writing Code for jQuery Foundation Projects, code)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-jQuery_Test" title="testNG.TestNG_Listener" class="method navigator-link" hash-for-method="test1(CLA, OpenJS Foundation, openjsf)">test1(CLA, OpenJS Foundation, openjsf)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-jQuery_Test" title="testNG.TestNG_Listener" class="method navigator-link" hash-for-method="test1(Web Sites, Contributing to jQuery Foundation Web Sites, web-sites)">test1(Web Sites, Contributing to jQuery Foundation Web Sites, web-sites)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-jQuery_Test" title="testNG.TestNG_Listener" class="method navigator-link" hash-for-method="test1(Style Guides, jQuery’s Style Guides, style-guide)">test1(Style Guides, jQuery’s Style Guides, style-guide)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-jQuery_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-jQuery_Test" class="panel jQuery_Test">
+          <div class="suite-jQuery_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testNG.TestNG_Listener</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1(Documentation, Contributing to jQuery Foundation Documentation, documentation)">
+                  </a> <!-- test1(Documentation, Contributing to jQuery Foundation Documentation, documentation) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">(Documentation, Contributing to jQuery Foundation Documentation, documentation)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1(Bug Triage, Bug Triage, triage)">
+                  </a> <!-- test1(Bug Triage, Bug Triage, triage) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">(Bug Triage, Bug Triage, triage)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1(Code, Writing Code for jQuery Foundation Projects, code)">
+                  </a> <!-- test1(Code, Writing Code for jQuery Foundation Projects, code) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">(Code, Writing Code for jQuery Foundation Projects, code)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1(CLA, OpenJS Foundation, openjsf)">
+                  </a> <!-- test1(CLA, OpenJS Foundation, openjsf) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">(CLA, OpenJS Foundation, openjsf)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1(Web Sites, Contributing to jQuery Foundation Web Sites, web-sites)">
+                  </a> <!-- test1(Web Sites, Contributing to jQuery Foundation Web Sites, web-sites) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">(Web Sites, Contributing to jQuery Foundation Web Sites, web-sites)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1(Style Guides, jQuery’s Style Guides, style-guide)">
+                  </a> <!-- test1(Style Guides, jQuery’s Style Guides, style-guide) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">(Style Guides, jQuery’s Style Guides, style-guide)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-jQuery_Test-class-passed -->
+        </div> <!-- panel jQuery_Test -->
+        <div panel-name="test-xml-jQuery_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\QA_Testing\SeleniumBoot\src\tng_suite\TestNG_Listener.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;jQuery Test&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;App testing FireFox&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testNG.TestNG_Listener&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- App testing FireFox --&gt;
+&lt;/suite&gt; &lt;!-- jQuery Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-jQuery_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for jQuery Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">App testing FireFox (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-jQuery_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for jQuery Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-jQuery_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for jQuery Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_jQuery_Test');
+function tableData_jQuery_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test1')
+data.setCell(0, 2, 'testNG.TestNG_Listener')
+data.setCell(0, 3, 3729);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test1')
+data.setCell(1, 2, 'testNG.TestNG_Listener')
+data.setCell(1, 3, 3610);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test1')
+data.setCell(2, 2, 'testNG.TestNG_Listener')
+data.setCell(2, 3, 3209);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test1')
+data.setCell(3, 2, 'testNG.TestNG_Listener')
+data.setCell(3, 3, 3122);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test1')
+data.setCell(4, 2, 'testNG.TestNG_Listener')
+data.setCell(4, 3, 2877);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test1')
+data.setCell(5, 2, 'testNG.TestNG_Listener')
+data.setCell(5, 3, 2529);
+window.suiteTableData['jQuery_Test']= { tableData: data, tableDiv: 'times-div-jQuery_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <div id="times-div-jQuery_Test">
+              </div> <!-- times-div-jQuery_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-jQuery_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for jQuery Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-jQuery_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testNG.TestNG_Listener</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test2</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-jQuery_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.TestNG_Listener</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">test1(CLA, OpenJS Foundation, openjsf)</span>
+                <span class="method-start">8498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTests([TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.Strin...)</span>
+                <span class="method-start">12235 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test1(Documentation, Contributing to jQuery Foundation Documentation, documentation)</span>
+                <span class="method-start">12238 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTests([TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.Strin...)</span>
+                <span class="method-start">15361 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test1(Bug Triage, Bug Triage, triage)</span>
+                <span class="method-start">15362 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTests([TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.Strin...)</span>
+                <span class="method-start">18571 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test1(Style Guides, jQuery’s Style Guides, style-guide)</span>
+                <span class="method-start">18572 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTests([TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.Strin...)</span>
+                <span class="method-start">21103 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test1(Web Sites, Contributing to jQuery Foundation Web Sites, web-sites)</span>
+                <span class="method-start">21109 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTests([TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.Strin...)</span>
+                <span class="method-start">24720 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test1(Code, Writing Code for jQuery Foundation Projects, code)</span>
+                <span class="method-start">24721 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTests([TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.Strin...)</span>
+                <span class="method-start">27599 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">27605 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
