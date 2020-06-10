@@ -5,7 +5,7 @@
       <![CDATA[onFinish:jQuery Test]]>
     </line>
     <line>
-      <![CDATA[onStart=App testing FireFox]]>
+      <![CDATA[onStart=App testing Chrome]]>
     </line>
     <line>
       <![CDATA[test1]]>
@@ -131,19 +131,19 @@
       <![CDATA[before invocation: testNG.TestNG_Listener==>tearDown==>true]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-06-08T20:33:26 CDT" name="jQuery Test" finished-at="2020-06-08T20:33:56 CDT" duration-ms="30275">
+  <suite started-at="2020-06-10T12:02:43 CDT" name="jQuery Test" finished-at="2020-06-10T12:03:04 CDT" duration-ms="20892">
     <groups>
     </groups>
-    <test started-at="2020-06-08T20:33:26 CDT" name="App testing FireFox" finished-at="2020-06-08T20:33:56 CDT" duration-ms="30275">
+    <test started-at="2020-06-10T12:02:43 CDT" name="App testing Chrome" finished-at="2020-06-10T12:03:04 CDT" duration-ms="20892">
       <class name="testNG.TestNG_Listener">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testNG.TestNG_Listener@43d7741f]" started-at="2020-06-08T20:33:26 CDT" name="setUp" finished-at="2020-06-08T20:33:35 CDT" duration-ms="8858" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNG.TestNG_Listener@de3a06f]" started-at="2020-06-10T12:02:43 CDT" name="setUp" finished-at="2020-06-10T12:02:51 CDT" duration-ms="7433" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[before invocation: testNG.TestNG_Listener==>setUp==>true]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@43d7741f]" started-at="2020-06-08T20:33:35 CDT" name="test1" data-provider="linkData" finished-at="2020-06-08T20:33:39 CDT" duration-ms="4371" status="PASS">
+        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@de3a06f]" started-at="2020-06-10T12:02:51 CDT" name="test1" data-provider="linkData" finished-at="2020-06-10T12:02:54 CDT" duration-ms="2755" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -179,11 +179,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterTests(org.testng.ITestResult)[pri:0, instance:testNG.TestNG_Listener@43d7741f]" started-at="2020-06-08T20:33:39 CDT" name="afterTests" finished-at="2020-06-08T20:33:39 CDT" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="afterTests(org.testng.ITestResult)[pri:0, instance:testNG.TestNG_Listener@de3a06f]" started-at="2020-06-10T12:02:54 CDT" name="afterTests" finished-at="2020-06-10T12:02:54 CDT" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@43d7741f] output=onTestStart=test1]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@de3a06f] output=onTestStart=test1]]]>
               </value>
             </param>
           </params>
@@ -193,7 +193,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- afterTests -->
-        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@43d7741f]" started-at="2020-06-08T20:33:39 CDT" name="test1" data-provider="linkData" finished-at="2020-06-08T20:33:43 CDT" duration-ms="3436" status="PASS">
+        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@de3a06f]" started-at="2020-06-10T12:02:54 CDT" name="test1" data-provider="linkData" finished-at="2020-06-10T12:02:56 CDT" duration-ms="2208" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -229,11 +229,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterTests(org.testng.ITestResult)[pri:0, instance:testNG.TestNG_Listener@43d7741f]" started-at="2020-06-08T20:33:43 CDT" name="afterTests" finished-at="2020-06-08T20:33:43 CDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTests(org.testng.ITestResult)[pri:0, instance:testNG.TestNG_Listener@de3a06f]" started-at="2020-06-10T12:02:56 CDT" name="afterTests" finished-at="2020-06-10T12:02:56 CDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@43d7741f] output=onTestStart=test1]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@de3a06f] output=onTestStart=test1]]]>
               </value>
             </param>
           </params>
@@ -243,7 +243,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- afterTests -->
-        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@43d7741f]" started-at="2020-06-08T20:33:43 CDT" name="test1" data-provider="linkData" finished-at="2020-06-08T20:33:46 CDT" duration-ms="3214" status="PASS">
+        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@de3a06f]" started-at="2020-06-10T12:02:56 CDT" name="test1" data-provider="linkData" finished-at="2020-06-10T12:02:58 CDT" duration-ms="1927" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -279,11 +279,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterTests(org.testng.ITestResult)[pri:0, instance:testNG.TestNG_Listener@43d7741f]" started-at="2020-06-08T20:33:46 CDT" name="afterTests" finished-at="2020-06-08T20:33:46 CDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTests(org.testng.ITestResult)[pri:0, instance:testNG.TestNG_Listener@de3a06f]" started-at="2020-06-10T12:02:58 CDT" name="afterTests" finished-at="2020-06-10T12:02:58 CDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@43d7741f] output=onTestStart=test1]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@de3a06f] output=onTestStart=test1]]]>
               </value>
             </param>
           </params>
@@ -293,7 +293,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- afterTests -->
-        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@43d7741f]" started-at="2020-06-08T20:33:46 CDT" name="test1" data-provider="linkData" finished-at="2020-06-08T20:33:49 CDT" duration-ms="3179" status="PASS">
+        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@de3a06f]" started-at="2020-06-10T12:02:58 CDT" name="test1" data-provider="linkData" finished-at="2020-06-10T12:03:00 CDT" duration-ms="2157" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -329,11 +329,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterTests(org.testng.ITestResult)[pri:0, instance:testNG.TestNG_Listener@43d7741f]" started-at="2020-06-08T20:33:49 CDT" name="afterTests" finished-at="2020-06-08T20:33:49 CDT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterTests(org.testng.ITestResult)[pri:0, instance:testNG.TestNG_Listener@de3a06f]" started-at="2020-06-10T12:03:00 CDT" name="afterTests" finished-at="2020-06-10T12:03:00 CDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@43d7741f] output=onTestStart=test1]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@de3a06f] output=onTestStart=test1]]]>
               </value>
             </param>
           </params>
@@ -343,7 +343,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- afterTests -->
-        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@43d7741f]" started-at="2020-06-08T20:33:49 CDT" name="test1" data-provider="linkData" finished-at="2020-06-08T20:33:52 CDT" duration-ms="2833" status="PASS">
+        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@de3a06f]" started-at="2020-06-10T12:03:00 CDT" name="test1" data-provider="linkData" finished-at="2020-06-10T12:03:02 CDT" duration-ms="1769" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -379,11 +379,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterTests(org.testng.ITestResult)[pri:0, instance:testNG.TestNG_Listener@43d7741f]" started-at="2020-06-08T20:33:52 CDT" name="afterTests" finished-at="2020-06-08T20:33:52 CDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTests(org.testng.ITestResult)[pri:0, instance:testNG.TestNG_Listener@de3a06f]" started-at="2020-06-10T12:03:02 CDT" name="afterTests" finished-at="2020-06-10T12:03:02 CDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@43d7741f] output=onTestStart=test1]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@de3a06f] output=onTestStart=test1]]]>
               </value>
             </param>
           </params>
@@ -393,7 +393,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- afterTests -->
-        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@43d7741f]" started-at="2020-06-08T20:33:52 CDT" name="test1" data-provider="linkData" finished-at="2020-06-08T20:33:55 CDT" duration-ms="3310" status="PASS">
+        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@de3a06f]" started-at="2020-06-10T12:03:02 CDT" name="test1" data-provider="linkData" finished-at="2020-06-10T12:03:03 CDT" duration-ms="1529" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -429,11 +429,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterTests(org.testng.ITestResult)[pri:0, instance:testNG.TestNG_Listener@43d7741f]" started-at="2020-06-08T20:33:55 CDT" name="afterTests" finished-at="2020-06-08T20:33:55 CDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTests(org.testng.ITestResult)[pri:0, instance:testNG.TestNG_Listener@de3a06f]" started-at="2020-06-10T12:03:03 CDT" name="afterTests" finished-at="2020-06-10T12:03:03 CDT" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@43d7741f] output=onTestStart=test1]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestNG_Listener.test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.TestNG_Listener@de3a06f] output=onTestStart=test1]]]>
               </value>
             </param>
           </params>
@@ -443,7 +443,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- afterTests -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNG.TestNG_Listener@43d7741f]" started-at="2020-06-08T20:33:55 CDT" name="tearDown" finished-at="2020-06-08T20:33:56 CDT" duration-ms="978" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNG.TestNG_Listener@de3a06f]" started-at="2020-06-10T12:03:03 CDT" name="tearDown" finished-at="2020-06-10T12:03:04 CDT" duration-ms="1027" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[before invocation: testNG.TestNG_Listener==>tearDown==>true]]>
@@ -451,6 +451,6 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testNG.TestNG_Listener -->
-    </test> <!-- App testing FireFox -->
+    </test> <!-- App testing Chrome -->
   </suite> <!-- jQuery Test -->
 </testng-results>
