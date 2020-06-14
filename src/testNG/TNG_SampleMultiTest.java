@@ -34,6 +34,18 @@ public class TNG_SampleMultiTest {
         buttonElement.click();
     }
 
+    @Test
+    public void submitCLick(){
+        WebElement submit = driver.findElement(By.xpath("//input[@value = 'A submit button'])position()=1]"));
+        submit.click();
+    }
+
+    @Test
+    public void anchorClick(){
+        WebElement anchor = driver.findElement(By.xpath("//a[text() = 'An anchor'])position()=1]"));
+        anchor.click();
+    }
+
 
 
 }

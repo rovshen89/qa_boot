@@ -1,5 +1,6 @@
 package pageObject;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
@@ -8,6 +9,12 @@ import org.openqa.selenium.support.How;
 import java.util.List;
 
 public class ButtonsPage {
+
+    WebDriver buttonsDriver;
+
+    public ButtonsPage(WebDriver driver){
+        buttonsDriver = driver;
+    }
 
     //WebElement buttonElement = driver.findElement(By.xpath("//button[text() = 'A button element'])position()=1]"));
     //WebElement submit = driver.findElement(By.xpath("//input[@value = 'A submit button'])position()=1]"));
