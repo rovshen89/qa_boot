@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [jQuery Test]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="App testing FireFox(failed)">
+  <test thread-count="5" name="App testing Chrome(failed)">
     <classes>
       <class name="testNG.TestNG_Listener">
         <methods>
@@ -12,5 +12,5 @@
         </methods>
       </class> <!-- testNG.TestNG_Listener -->
     </classes>
-  </test> <!-- App testing FireFox(failed) -->
+  </test> <!-- App testing Chrome(failed) -->
 </suite> <!-- Failed suite [jQuery Test] -->
