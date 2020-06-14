@@ -2,13 +2,20 @@ package pageObject;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.How;
+
+import java.util.List;
 
 public class ButtonsPage {
 
     //WebElement buttonElement = driver.findElement(By.xpath("//button[text() = 'A button element'])position()=1]"));
     //WebElement submit = driver.findElement(By.xpath("//input[@value = 'A submit button'])position()=1]"));
     //WebElement anchor = driver.findElement(By.xpath("//a[text() = 'An anchor'])position()=1]"));
+    //List<WebElement> lisfOfButtons = driver.findElements(By.xpath("//button[text() = 'A button element']"));
+
+    @FindBys(@FindBy(xpath = "//button[text() = 'A button element']"))
+    List<WebElement> listOfButtons;
 
     @FindBy(how = How.XPATH, using = "(//button[text() = 'A button element'])position()=1]")
     WebElement buttonElem;
